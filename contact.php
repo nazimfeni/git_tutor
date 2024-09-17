@@ -8,7 +8,7 @@
 <body>
       <h1>contact page</h1>
 
-      <h3>Minaj contact</h3>
+      <h3>Minhaz contact: 123344454555</h3>
 
       <h3>Contact number</h3>
 
