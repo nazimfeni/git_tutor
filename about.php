@@ -8,6 +8,10 @@
 <body>
       <h1>About Page</h1>
       <p>I am developer</p>
+
       <p>I like C++</p>
+
+      <p>I like Python</p>
+
 </body>
 </html>
