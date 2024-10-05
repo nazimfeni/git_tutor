@@ -1,5 +1,5 @@
 # Git World
-Issue: to go back in previous commit and update to remote
+Issue: To go back in previous commit and update to remote
 ## Steps:
 1. First, find the commit ID of the third commit back by using:
       ```bash
@@ -22,4 +22,15 @@ If you want to permanently reset your repository to that specific commit and dis
       git push origin master --force
 Then the remote Master will be updated in specifie previous commit!
 -------------------------------------------------------------------------------------------------------------------------
-
+## Alternative way
+Suppose you want to go back in previous commit point ID 778ea21. Here branch3 is a branch name
+```bash
+git checkout 778ea21
+git checkout -b branch3 
+git add . && git commit -m"update to specificcommit"
+git checkout master
+git merge branch3
+git add . && git commit -m"update to specificcommit master"
+git push
+```
+-------------------------------------------------------------------------------------------------------------------------
