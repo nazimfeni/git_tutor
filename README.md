@@ -36,4 +36,53 @@ git push
 --------------------------------------------------------------------------------------------------------------
 
 ## Temporary Commit
-
+ Save Changes with git stash
+```bash
+git stash
+```
+View Stashed Changes
+```bash
+git stash list
+```
+Apply the Stash
+```bash
+git stash apply
+```
+If you want to apply a specific stash (e.g., stash@{1}):
+```bash
+git stash apply stash@{1}
+```
+Apply and Drop Stash
+```bash
+git stash pop
+```
+ Remove a Stash
+```bash
+git stash drop stash@{0}
+```
+To drop or clear all stashes:
+```bash
+git stash clear
+```
+ Stash with a Message
+```bash
+git stash save "Work on feature X"
+```
+Stash Only Unstaged Changes
+If you only want to stash changes that haven't been staged (i.e., files that haven't been added using git add)
+```bash
+git stash --keep-index
+```
+Stash Untracked or Ignored Files
+```bash
+git stash -u
+```
+To stash untracked and ignored files:
+```bash
+git stash -a
+```
+Stash Branch
+If you're in the middle of working on a feature and want to quickly switch to a new branch but don’t want to lose progress, you can use:
+```bash
+git stash branch <branch-name>
+```
