@@ -86,3 +86,17 @@ If you're in the middle of working on a feature and want to quickly switch to a 
 ```bash
 git stash branch <branch-name>
 ```
+## To delete a branch in Git, use the following commands based on your needs:
+Delete a Local Branch
+```bash
+git branch -d branch-name
+```
+This command deletes a branch only if it has been fully merged with your current branch. If you want to delete a branch that hasn’t been merged, use:
+```bash
+git branch -D branch-name
+```
+Delete a Remote Branch
+```bash
+git push origin --delete branch-name
+```
+
